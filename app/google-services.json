@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "592824406582",
+    "firebase_url": "https://chattow-4ff52-default-rtdb.firebaseio.com",
+    "project_id": "chattow-4ff52",
+    "storage_bucket": "chattow-4ff52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592824406582:android:e412f076cea229d3cdfe97",
+        "android_client_info": {
+          "package_name": "com.example.chatApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592824406582-569s3c3049n23j7q9qd0la5cqlig0vrs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8AimpjJvrnZ_gRVIkOKVCVzrO_BUir-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592824406582-569s3c3049n23j7q9qd0la5cqlig0vrs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

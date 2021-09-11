@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.UsersActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:id="@+id/toolbar">
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_foreground"
+            android:id="@+id/imgBack"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgBack"
+            android:text="@string/chats"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13ssp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/profile_pic"
+            android:id="@+id/profile_img_usac"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recView"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="@dimen/_1sdp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="no users to chat with"
+        android:visibility="gone"
+        android:id="@+id/noUsersTv"/>
+
+</RelativeLayout>

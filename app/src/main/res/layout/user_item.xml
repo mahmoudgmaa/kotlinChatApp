@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+
+    android:background="@drawable/white_grey_border_bottom">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:id="@+id/profile_img_circle"
+        android:src="@mipmap/profile_pic"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:layout_toRightOf="@+id/profile_img_circle"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:textStyle="bold"
+        android:layout_above="@+id/lm_tv"
+        android:textSize="@dimen/_11ssp"
+        android:id="@+id/name_tv"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="second text"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/profile_img_circle"
+        android:id="@+id/lm_tv"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:id="@+id/toolbar2">
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_foreground"
+            android:id="@+id/imgBack2"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgBack2"
+            android:text="@string/label_profile"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13ssp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_20sdp"
+        android:layout_below="@+id/toolbar2"
+        android:layout_marginTop="@dimen/_50sdp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/profile_pic"
+            android:id="@+id/profile_img_pfac"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_img_pfac"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="User Name"
+            android:textSize="@dimen/_21ssp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/userName"/>
+    </RelativeLayout>
+
+</RelativeLayout>
